@@ -1,0 +1,37 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cqmoe/awesome-coolq/master/schema/app/v9/app-schema.json",
+  "ret": 1,
+  "apiver": 9,
+  "name": "Cat Robot",
+  "version": "0.0.1",
+  "version_id": 1,
+  "author": "Bad Laugh Cat",
+  "description": "2020/07/24",
+  "event": [
+    {
+      "id": 1,
+      "type": 21,
+      "name": "私聊消息处理",
+      "function": "OnUserMessageReceived",
+      "priority": 30000
+    },
+    {
+      "id": 2,
+      "type": 2,
+      "name": "群消息处理",
+      "function": "OnGroupMessageReceived",
+      "priority": 30000
+    },
+    {
+      "id": 1003,
+      "type": 1003,
+      "name": "应用已被启用",
+      "priority": 30000,
+      "function": "OnAppEnabled"
+    }
+  ],
+  "auth": [
+    101,
+    106
+  ]
+}
